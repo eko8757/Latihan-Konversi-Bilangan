@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.eko8757.cbhitung.Konversi">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Konversi"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/txtDesimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="20dp"
+        android:text="Desimal"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editDes"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtDesimal"
+        android:layout_marginTop="15dp"
+        android:hint="Masukan Nilai"/>
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editDes"
+        android:layout_marginTop="20dp"
+        android:text="convert"/>
+
+    <TextView
+        android:id="@+id/textOktal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Oktal"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnConvert"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/editBin"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textOktal"
+        android:layout_marginTop="10dp"
+        android:hint="hasil"/>
+
+    <Button
+        android:id="@+id/btnkembali"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editBin"
+        android:layout_marginTop="30dp"
+        android:text="Kembali"/>
+
+</RelativeLayout>
